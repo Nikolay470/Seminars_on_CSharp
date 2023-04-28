@@ -1,4 +1,7 @@
-﻿int SearchSecondDigit(int num)
+﻿// Задача 10: Напишите программу,которая принимает на вход трёхзначное число и 
+// на выходе показывает вторую цифру этого числа.
+
+int SearchSecondDigit(int num)
 {
     int result = (num / 10) % 10;
     if(result < 0)
