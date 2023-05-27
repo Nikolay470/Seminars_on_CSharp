@@ -17,10 +17,10 @@ int[] CreateArray(int size, int min, int max)
 int[] arrayProductNumbers(int[] arr)
 {
     int size = 0;
-    if(arr.Length % 2 == 1)
-            size = arr.Length / 2 + 1;
+    if (arr.Length % 2 == 1)
+        size = arr.Length / 2 + 1;
     else
-            size = arr.Length / 2;
+        size = arr.Length / 2;
 
     int[] array = new int[size];
 
@@ -28,8 +28,8 @@ int[] arrayProductNumbers(int[] arr)
     {
         array[i] = arr[i] * arr[arr.Length - 1 - i];
     }
-    if(arr.Length % 2 == 1)
-            array[array.Length - 1] = arr[arr.Length / 2];
+    if (arr.Length % 2 == 1)
+        array[array.Length - 1] = arr[arr.Length / 2];
     return array;
 }
 
@@ -38,10 +38,10 @@ void PrintArray(int[] arr)
     Console.Write("[");
     for (int i = 0; i < arr.Length; i++)
     {
-        if(i < arr.Length - 1)
-                Console.Write($"{arr[i]}, ");
-        else       
-                Console.Write($"{arr[i]}");
+        if (i < arr.Length - 1)
+            Console.Write($"{arr[i]}, ");
+        else
+            Console.Write($"{arr[i]}");
     }
     Console.Write("]");
 }
