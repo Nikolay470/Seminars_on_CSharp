@@ -62,6 +62,7 @@ void FrequencyDictionary(int[,] matrix)
             item = arr[i];
         }
     }
+    Console.WriteLine($"Элемент {item} встречается {count} раз");
 }
 
 int[,] matrixTest = CreateMatrixIntRnd(4, 3, 1, 10);
