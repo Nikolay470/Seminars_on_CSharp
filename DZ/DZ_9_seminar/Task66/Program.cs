@@ -15,8 +15,8 @@ int SumNaturalNumbers(int numM, int numN)
     else return numM;
 }
 
-int numberM = GetInput("Введите первое число (целое): ");
-int numberN = GetInput("Введите второе число (целое): ");
+int numberM = GetInput("Введите первое число (целое, положительное): ");
+int numberN = GetInput("Введите второе число (целое, положительное): ");
 
 if (numberM < 0 || numberN < 0) Console.WriteLine("Числа должны быть положительные");
 else
